@@ -8,10 +8,12 @@ namespace CarLotSimulator
 {
     class Lot {
 
+        public static int numberOfCars;
         List<Car> lot = new List<Car>();
 
         public void addCar(Car car) {
             lot.Add(car);
+            numberOfCars++;
         }
 
         public void list() {
