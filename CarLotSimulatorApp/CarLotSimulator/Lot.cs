@@ -11,12 +11,12 @@ namespace CarLotSimulator
         public static int numberOfCars;
         List<Car> lot = new List<Car>();
 
-        public void addCar(Car car) {
+        public void AddCar(Car car) {
             lot.Add(car);
             numberOfCars++;
         }
 
-        public void list() {
+        public void List() {
             for (int i = 0; i < lot.Count;  i++) {
                 Console.WriteLine($"Make: {lot[i].Make}");
                 Console.WriteLine($"Model: {lot[i].Model}");

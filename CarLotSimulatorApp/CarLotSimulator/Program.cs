@@ -9,13 +9,13 @@ namespace CarLotSimulator
         {
             Lot garage = new Lot();
             Car ranger = new Car() {make = "Ford", model = "Ranger", year = 2004, engineNoise = "VROOM VROOM", honkNoise = "HONKA HONKA", isDriveable = true};
-            garage.addCar(ranger);
+            garage.AddCar(ranger);
             Console.WriteLine($"There are {Lot.numberOfCars} cars");
             Car clownCar = new Car("VoltesWaggon", "Bug", 2008, "vrrrrrr", "BEEP BEEP", true);
-            garage.addCar(clownCar);
+            garage.AddCar(clownCar);
             Console.WriteLine($"There are {Lot.numberOfCars} cars");
             Car brothersCar = new Car();
-            garage.addCar(brothersCar);
+            garage.AddCar(brothersCar);
             Console.WriteLine($"There are {Lot.numberOfCars} cars");
 
             
@@ -37,7 +37,7 @@ namespace CarLotSimulator
             brothersCar.MakeHonkNoise();
             Console.Write("\n");
 
-            garage.list();
+            garage.List();
         }
     }
 }
